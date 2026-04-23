@@ -5,8 +5,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-neutral-900  border-t border-neutral-800">
-      <div className="max-w-360 mx-auto pt-20 pb-10 ">
+    <footer className="w-full bg-neutral-900 border-t border-neutral-800">
+      <div className="max-w-360 mx-auto pt-20 pb-10 px-4">
         <div className="flex flex-col lg:flex-row justify-between gap-16 mb-20">
           <div className="flex flex-col gap-8 flex-1 max-w-sm">
             <Logo />
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-neutral-850 px-6 py-4">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-6 bg-neutral-850 px-6 py-4">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
           <p className="text-neutral-400 text-sm">
             @2023 Estatein. All Rights Reserved.
@@ -71,7 +71,6 @@ export function Footer() {
           </Link>
         </div>
 
-        {/* Social Links */}
         <div className="flex items-center gap-3">
           {SOCIAL_LINKS.map(social => (
             <Link

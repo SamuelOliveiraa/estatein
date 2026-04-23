@@ -10,8 +10,8 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full bg-neutral-900 border-b border-neutral-800">
-      <div className="bg-neutral-850 py-3 text-center text-sm text-white">
+    <header className="w-full bg-neutral-900 border-b border-neutral-800 sticky top-0 z-50">
+      <div className="bg-neutral-850 py-3 text-center text-xs md:text-sm text-white px-4">
         <p>
           ✨ Discover Your Dream Property with Estatein{" "}
           <Link href="/properties" className="underline ml-1">
@@ -20,15 +20,15 @@ export function Header() {
         </p>
       </div>
 
-      <nav className="max-w-360 mx-auto px-4 md:px-20 py-5 flex items-center justify-between">
+      <nav className="max-w-[1440px] mx-auto px-4 md:px-20 py-4 md:py-5 flex items-center justify-between">
         <Logo />
 
-        <ul className="hidden md:flex items-center gap-6">
+        <ul className="hidden md:flex items-center gap-2 lg:gap-6">
           {NAV_LINKS.map(link => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`text-white hover:bg-neutral-850 px-4 py-3 rounded-xl transition-colors ${pathname.match(link.href) ? "bg-neutral-850" : ""}`}
+                className={`text-white hover:bg-neutral-850 px-4 py-3 rounded-xl transition-colors text-sm lg:text-base ${pathname === link.href ? "bg-neutral-850" : ""}`}
               >
                 {link.label}
               </Link>
@@ -36,7 +36,7 @@ export function Header() {
           ))}
         </ul>
 
-        <Link href="/contact">
+        <Link href="/contact" className="hidden md:block">
           <Button className="py-3">Contact Us</Button>
         </Link>
 
