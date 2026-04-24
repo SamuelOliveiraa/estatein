@@ -37,3 +37,28 @@
   --color-neutral-500: #808080;
   --color-neutral-400: #999999;
 }
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-neutral-700) transparent;
+}
+
+/* Chrome, Edge e Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-neutral-700);
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-neutral-600);
+}

@@ -4,6 +4,7 @@ import { SunIcon } from "@heroicons/react/24/solid";
 import { BuildingStorefrontIcon } from "@heroicons/react/24/solid";
 import { BanknotesIcon } from "@heroicons/react/24/solid";
 import { BuildingOffice2Icon } from "@heroicons/react/24/solid";
+import { FAQSection } from "@/components/sections/faq-section";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Hero />
 
       <section className="p-1 bg-neutral-850">
-        <div className="bg-neutral-900 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 p-3">
+        <div className="bg-neutral-900 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-3">
           <ServiceCard
             title="Find Your Dream Home"
             Icon={BuildingStorefrontIcon}
@@ -34,6 +35,8 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <FAQSection />
     </div>
   );
 }
