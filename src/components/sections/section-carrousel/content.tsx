@@ -15,7 +15,7 @@ export default function Content({ itemsLength, children }: ContentProps) {
   function changeScrollPosition(direction: "left" | "right") {
     if (scrollBarRef.current) {
       const { current } = scrollBarRef;
-      const scrollAmount = 400;
+      const scrollAmount = 300;
 
       if (direction === "left") {
         current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
@@ -28,7 +28,7 @@ export default function Content({ itemsLength, children }: ContentProps) {
   return (
     <>
       <div
-        className="flex gap-4 md:gap-6 overflow-x-auto pb-8 scrollbar-hide no-scrollbar"
+        className="flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory pb-8 scrollbar-hide no-scrollbar"
         ref={scrollBarRef}
       >
         {children}

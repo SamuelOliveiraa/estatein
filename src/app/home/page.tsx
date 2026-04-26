@@ -5,6 +5,8 @@ import { BuildingStorefrontIcon } from "@heroicons/react/24/solid";
 import { BanknotesIcon } from "@heroicons/react/24/solid";
 import { BuildingOffice2Icon } from "@heroicons/react/24/solid";
 import { FAQSection } from "@/components/sections/faq-section";
+import { TestimonialsSection } from "@/components/sections/testimonials-section";
+import { PropertiesSection } from "@/components/sections/properties-section";
 
 export default function Home() {
   return (
@@ -35,7 +37,8 @@ export default function Home() {
           />
         </div>
       </section>
-
+      <PropertiesSection />
+      <TestimonialsSection />
       <FAQSection />
     </div>
   );
