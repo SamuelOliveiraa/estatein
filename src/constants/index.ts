@@ -127,7 +127,7 @@ export const TESTIMONIALS = [
     name: "Robert Fox",
     title: "Smooth Transition",
     description:
-      "Moving to a new city is stressful, but Estatein made finding an apartment so easy. The virtual tours were a life-saver for my busy schedule."
+      "Moving to a new city is stressful, but Estatein made finding an Flat so easy. The virtual tours were a life-saver for my busy schedule."
   },
   {
     id: 5,
@@ -206,7 +206,7 @@ export const PROPERTIES = [
     price: 320000,
     bedrooms: 2,
     bathrooms: 1,
-    category: "Apartment",
+    category: "Flat",
     imageURL:
       "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80"
   },
@@ -236,13 +236,13 @@ export const PROPERTIES = [
   },
   {
     id: 5,
-    title: "Skyline View Apartment",
+    title: "Skyline View Flat",
     description:
-      "Modern 1-bedroom apartment with minimalist design. Ideally located near public transport and the financial district. Great for investors.",
+      "Modern 1-bedroom Flat with minimalist design. Ideally located near public transport and the financial district. Great for investors.",
     price: 210000,
     bedrooms: 1,
     bathrooms: 1,
-    category: "Apartment",
+    category: "Flat",
     imageURL:
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
   },
@@ -266,7 +266,7 @@ export const PROPERTIES = [
     price: 440000,
     bedrooms: 3,
     bathrooms: 3,
-    category: "Apartment",
+    category: "Flat",
     imageURL:
       "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80"
   },
@@ -302,7 +302,7 @@ export const PROPERTIES = [
     price: 185000,
     bedrooms: 1,
     bathrooms: 1,
-    category: "Apartment",
+    category: "Flat",
     imageURL:
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
   }
