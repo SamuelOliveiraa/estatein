@@ -1,5 +1,5 @@
-import { Button } from "../ui/button";
-import { CardRoot } from "./card-root";
+import { Button } from "@/components/ui";
+import { CardRoot } from "@/components/cards";
 
 interface FAQCardProps {
   question: string;

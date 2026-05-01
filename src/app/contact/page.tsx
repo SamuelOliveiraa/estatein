@@ -1,7 +1,6 @@
-import { ServiceCard } from "@/components/cards/service-card";
-import ServiceSection from "@/components/sections/service-section";
-import { PageHero } from "@/components/ui/page-hero";
 import { SERVICES_DATA_CONTACT } from "@/constants";
+import { ServiceCard } from "@/components/cards";
+import { PageHero, ServiceSection } from "@/components/sections";
 
 export default function ContactPage() {
   return (

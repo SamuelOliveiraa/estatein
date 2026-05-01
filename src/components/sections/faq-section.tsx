@@ -1,7 +1,7 @@
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { FAQS } from "@/constants";
 import { FAQCard } from "../cards/faq-card";
-import { SectionCarousel } from "./section-carrousel";
+import { SectionCarousel } from "@/components/sections/section-carrousel";
 
 export function FAQSection() {
   return (

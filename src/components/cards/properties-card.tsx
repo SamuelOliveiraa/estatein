@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { CardRoot } from "./card-root";
-import { Badge } from "../ui/badge";
+import { Badge, Button } from "../ui";
+
 import { FaBed } from "react-icons/fa";
 import { BuildingOfficeIcon } from "@heroicons/react/24/solid";
 import { PiBathtubFill } from "react-icons/pi";
-import { Button } from "../ui/button";
 
 interface PropertiesCardProps {
   imageURL: string;
@@ -66,7 +66,7 @@ export function PropertiesCard({
           </span>
         </div>
 
-        <Button variant="secondary">View Property Detailss</Button>
+        <Button variant="secondary">View Property Details</Button>
       </div>
     </CardRoot>
   );

@@ -1,6 +1,6 @@
 import { FOOTER_SECTIONS, SOCIAL_LINKS } from "@/constants";
 import Link from "next/link";
-import Logo from "../ui/logo";
+import { Logo } from "../ui";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export function Footer() {

@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { NAV_LINKS } from "@/constants";
-import Logo from "../ui/logo";
-import { Button } from "../ui/button";
+import { Logo, Button } from "../ui";
 import { usePathname } from "next/navigation";
 
 export function Header() {

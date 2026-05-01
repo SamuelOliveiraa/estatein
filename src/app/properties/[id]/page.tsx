@@ -1,5 +1,5 @@
 "use client";
-import { FAQSection } from "@/components/sections/faq-section";
+import { FAQSection } from "@/components/sections";
 import { useParams } from "next/navigation";
 
 export default function PropertiesIDPage() {

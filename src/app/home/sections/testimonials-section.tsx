@@ -1,7 +1,7 @@
-import { Button } from "../ui/button";
+import { Button } from "../../../components/ui/button";
 import { TESTIMONIALS } from "@/constants";
-import { SectionCarousel } from "./section-carrousel";
-import { TestimonialsCard } from "../cards/testimonials-card";
+import { SectionCarousel } from "../../../components/sections/section-carrousel";
+import { TestimonialsCard } from "../../../components/cards/testimonials-card";
 
 export function TestimonialsSection() {
   return (

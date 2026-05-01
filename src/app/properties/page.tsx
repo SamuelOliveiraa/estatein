@@ -1,4 +1,4 @@
-import { PageHero } from "@/components/ui/page-hero";
+import { PageHero } from "@/components/sections";
 
 export default function PropertiesPage() {
   return (

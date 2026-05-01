@@ -1,6 +1,6 @@
-import { Button } from "../ui/button";
+import { Button } from "../ui";
 import { SectionCarousel } from "./section-carrousel";
-import { PropertiesCard } from "../cards/properties-card";
+import { PropertiesCard } from "../cards";
 import { PROPERTIES } from "@/constants";
 
 export function PropertiesSection() {

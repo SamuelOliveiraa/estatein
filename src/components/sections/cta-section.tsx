@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
+import { Button } from "../ui";
 
 export function CTASection() {
   return (
     <section className="w-full bg-neutral-900 border-t border-neutral-800 py-16 px-4 md:p-16 flex justify-center items-center">
       <div className="max-w-360 w-full flex flex-col md:flex-row items-center justify-between gap-10">
         <div className="relative z-10 max-w-4xl">
-          <h2 className="text-2xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Start Your Real Estate Journey Today
           </h2>
           <p className="text-neutral-400 text-md leading-relaxed">

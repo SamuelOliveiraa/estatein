@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Stars } from "../ui/stars";
-import { CardRoot } from "./card-root";
+import { Stars } from "@/components/ui";
+import { CardRoot } from "@/components/cards";
 
 interface TestimonialsCardProps {
   rating: number;
