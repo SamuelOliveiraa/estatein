@@ -3,7 +3,7 @@ import Link from "next/link";
 import { StatItem } from "@/components/ui/stat-item";
 import { Button } from "../ui/button";
 
-export function Hero() {
+export function HeroSectionHome() {
   return (
     <section
       id="hero-section"
@@ -20,12 +20,12 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-10 md:mb-16">
-          <Link href="/about" className="w-full sm:w-auto">
+          <Link href="/about" className="w-full md:w-auto">
             <Button variant="primary" className="w-full py-4">
               Learn More
             </Button>
           </Link>
-          <Link href="/properties" className="w-full sm:w-auto">
+          <Link href="/properties" className="w-full md:w-auto">
             <Button variant="secondary" className="w-full py-4">
               Browse Properties
             </Button>

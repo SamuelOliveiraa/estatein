@@ -1,3 +1,9 @@
+import { MapPinIcon, PhoneIcon, SunIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import { BuildingStorefrontIcon } from "@heroicons/react/24/solid";
+import { BanknotesIcon } from "@heroicons/react/24/solid";
+import { BuildingOffice2Icon } from "@heroicons/react/24/solid";
+
 export const NAV_LINKS = [
   { label: "Home", href: "/home" },
   { label: "About Us", href: "/about" },
@@ -305,5 +311,51 @@ export const PROPERTIES = [
     category: "Flat",
     imageURL:
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+  }
+];
+
+export const SERVICES_DATA_HOME = [
+  {
+    title: "Find Your Dream Home",
+    Icon: BuildingStorefrontIcon,
+    href: "/properties"
+  },
+  {
+    title: "Unlock Property Value",
+    Icon: BanknotesIcon,
+    href: "/services"
+  },
+  {
+    title: "Effortless Property Management",
+    Icon: BuildingOffice2Icon,
+    href: "/properties"
+  },
+  {
+    title: "Smart Investments, Informed Decisions",
+    Icon: SunIcon,
+    href: "/services"
+  }
+];
+
+export const SERVICES_DATA_CONTACT = [
+  {
+    title: "info@estatein.com",
+    Icon: EnvelopeIcon,
+    href: "/properties"
+  },
+  {
+    title: "+1 (123) 456-7890",
+    Icon: PhoneIcon,
+    href: "/services"
+  },
+  {
+    title: "Main Headquarters",
+    Icon: MapPinIcon,
+    href: "/properties"
+  },
+  {
+    title: "Instagram  Linkedin  Facebook",
+    Icon: SunIcon,
+    href: "/services"
   }
 ];

@@ -1,42 +1,27 @@
-import { Hero } from "@/components/sections/hero";
+import { HeroSectionHome } from "@/components/sections/hero-section-home";
 import { ServiceCard } from "@/components/cards/service-card";
-import { SunIcon } from "@heroicons/react/24/solid";
-import { BuildingStorefrontIcon } from "@heroicons/react/24/solid";
-import { BanknotesIcon } from "@heroicons/react/24/solid";
-import { BuildingOffice2Icon } from "@heroicons/react/24/solid";
 import { FAQSection } from "@/components/sections/faq-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { PropertiesSection } from "@/components/sections/properties-section";
+import { SERVICES_DATA_HOME } from "@/constants";
+import ServiceSection from "@/components/sections/service-section";
 
 export default function Home() {
   return (
     <div className="flex flex-col w-full">
-      <Hero />
+      <HeroSectionHome />
 
-      <section className="p-1 bg-neutral-850">
-        <div className="bg-neutral-900 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-3">
+      <ServiceSection>
+        {SERVICES_DATA_HOME.map(service => (
           <ServiceCard
-            title="Find Your Dream Home"
-            Icon={BuildingStorefrontIcon}
-            href="/properties"
+            key={service.title}
+            title={service.title}
+            Icon={service.Icon}
+            href={service.href}
           />
-          <ServiceCard
-            title="Unlock Property Value"
-            Icon={BanknotesIcon}
-            href="/services"
-          />
-          <ServiceCard
-            title="Effortless Property Management"
-            Icon={BuildingOffice2Icon}
-            href="/properties"
-          />
-          <ServiceCard
-            title="Smart Investments, Informed Decisions"
-            Icon={SunIcon}
-            href="/services"
-          />
-        </div>
-      </section>
+        ))}
+      </ServiceSection>
+
       <PropertiesSection />
       <TestimonialsSection />
       <FAQSection />

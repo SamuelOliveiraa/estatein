@@ -20,7 +20,7 @@ export function Header() {
         </p>
       </div>
 
-      <nav className="max-w-[1440px] mx-auto px-4 md:px-20 py-4 md:py-5 flex items-center justify-between">
+      <nav className="max-w-360 mx-auto px-6 2xl:px-0 py-4 md:py-5 flex items-center justify-between">
         <Logo />
 
         <ul className="hidden md:flex items-center gap-2 lg:gap-6">
@@ -40,6 +40,7 @@ export function Header() {
           <Button className="py-3">Contact Us</Button>
         </Link>
 
+        {/* Menu hamburguer*/}
         <button className="md:hidden text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
